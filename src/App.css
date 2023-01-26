@@ -63,7 +63,7 @@ nav{
     justify-content:space-between;
     align-items:center;
     z-index:100;
-    backdrop-filter: blur(1000px);
+    
 }
 nav *{
     font-size:0.9rem;

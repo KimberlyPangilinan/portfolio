@@ -6,9 +6,12 @@ import Layout from './components/Layout';
 function App() {
   
   const[theme,setTheme]=useState("dark") 
+  const mode = localStorage.getItem('mode');
+useEffect(() => {
+      document.body.className = (mode)?mode:theme;
+    });
   const[icon,setIcon]=useState("bi bi-brightness-alt-high-fill") 
   const iconRef = useRef();
-const mode = localStorage.getItem('mode');
 
 
   function handleClick(){
@@ -24,12 +27,10 @@ const mode = localStorage.getItem('mode');
       
     }
   }
-  useEffect(() => {
-        document.body.className = mode;
-      });
+ 
   return (
     <div className="App">
-     <Layout handleClick={handleClick} icon={icon} iconRef={iconRef}/>
+     <Layout handleClick={handleClick} icon={icon} iconRef={iconRef} theme={theme}/>
     </div>
   );
 }
