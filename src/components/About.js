@@ -15,19 +15,19 @@ const About = () => {
                         <li>
                             <details>
                                 <summary><i className="bi bi-code-slash"></i>  Web Development</summary>
-                                <p>Something small enough to escape casual notice.</p>
+                                <p>Creating websites and web applications both front-end and back-end</p>
                             </details>
                          </li>
                         <li> 
                             <details>
                                 <summary><i className="bi bi-circle-square"></i> UI/UX Design</summary>
-                                <p>Something small enough to escape casual notice.</p>
+                                <p>Designing and planning user interface and user experience</p>
                             </details>
                         </li>
                         <li>
                             <details>
                                 <summary><i className="bi bi-stack"></i>  Graphics</summary>
-                                <p>Something small enough to escape casual notice.</p>
+                                <p>Editing and enhancing of images</p>
                             </details>
                         </li>
                     </ul>

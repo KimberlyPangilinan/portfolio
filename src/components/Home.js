@@ -10,7 +10,7 @@ const Home = () => {
 
     </h1>
     
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et, nam reiciendis madolor sit amet consectetur adipisicing elit. Iste et, nam reiciendis ma</p>
+    <p>Being an explorer is my passion, I love to design and create things, especially websites</p>
     <br/>
     <div className="social">
         <button className="btn btn-primary btn-link">Download my CV</button> 
