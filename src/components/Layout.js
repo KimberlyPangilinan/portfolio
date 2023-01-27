@@ -3,7 +3,7 @@ import Footer from './Footer'
 import Main from './Main'
 import Navbar from './Navbar'
 
-const Layout = ({handleClick,iconRef,icon,theme}) => {
+const Layout = ({handleClick,iconRef,icon,theme,mode}) => {
   return (
     <div>
       <Navbar
@@ -11,6 +11,8 @@ const Layout = ({handleClick,iconRef,icon,theme}) => {
         iconRef={iconRef}
         icon={icon}
         theme={theme}
+        mode={mode}
+        
       />
       <Main></Main>
       <Footer/>

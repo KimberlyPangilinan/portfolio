@@ -7,10 +7,11 @@ function App() {
   
   const[theme,setTheme]=useState("dark") 
   const mode = localStorage.getItem('mode');
+  
 useEffect(() => {
       document.body.className = (mode)?mode:theme;
     });
-  const[icon,setIcon]=useState("bi bi-brightness-alt-high-fill") 
+  const[icon,setIcon]=useState("bi bi-cloud-moon-fill") 
   const iconRef = useRef();
 
 
@@ -30,7 +31,7 @@ useEffect(() => {
  
   return (
     <div className="App">
-     <Layout handleClick={handleClick} icon={icon} iconRef={iconRef} theme={theme}/>
+     <Layout handleClick={handleClick} icon={icon} iconRef={iconRef} theme={theme} mode={mode}/>
     </div>
   );
 }

@@ -9,7 +9,8 @@
     --grey:rgba(80, 80, 80, 0.744);
     --bluish:rgb(169, 185, 185);
     --light-bluish:rgba(80, 80, 80, 0.101);
-    --blue:#0d09e3;
+    --blue:#4b533a;
+    --pink:#8d797e;
 
 }
 .dark{
@@ -29,7 +30,7 @@
     --text:var(--grey);
     --logo:var(--grey);
     --span:var(--light-black);
-    --button:var(--blue)!important;
+    --button:var(--pink)!important;
     --btn-text:var(--super-white)!important;
     --buttons:var(--light-bluish)!important;
   --btn-texts:var(--blue)!important;
@@ -92,6 +93,22 @@ nav *{
     gap: 40px;
     list-style: none;
 }
+p{
+  text-align:justify;
+}
+h2::after{
+  content:"  ";
+  
+  width:8%;
+  height:0px;
+  border-top:2px solid var(--blue);
+  border-bottom:2px solid var(--pink);
+  position:relative;
+  
+  bottom:2rem;
+  right:0px;
+  display:flex;
+}
 a{
     text-decoration: none;
     color:var(--text);
@@ -117,7 +134,7 @@ a:hover{
     background-color:rgba(229, 229, 229, 0.266);
     font-size:0.8rem;
     pointer-events: auto;
-    color:rgba(30, 30, 30, 0.822);
+    color:rgba(30, 30, 30, 0.956);
 }
 
 .btn-primary{
@@ -188,7 +205,7 @@ section{
 .about-section{
     
 }
-.contact-sec h2, .about-section h2{
+.contact-sec h2, .about-section h2,.tech-section h2{
     font-size:2rem;
     line-height:8rem;
 }
@@ -290,11 +307,15 @@ details > p {
   padding:2rem;
   display:flex;
   flex-direction: row;
-  gap:80px;
+  gap:4rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 .tech-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1rem;
   text-align:center;
   width:8%;
 }
@@ -369,5 +390,17 @@ details > p {
     
     flex-direction: column;
     
+  }
+  .tech-content{
+    padding:2rem 1rem;
+    gap:4rem
+  }
+  .tech-group{
+    text-align:center;
+    width:16%;
+  }
+  .menu{
+    color:var(--white);
+    background-color:transparent;
   }
 }
