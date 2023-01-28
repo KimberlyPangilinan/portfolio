@@ -8,8 +8,7 @@ const About = () => {
         <div className="left-content">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maxime ratione dicta rerum nemo architecto quaerat exercitationem fugit! Praesentium molestias magnam at ratione nam nihil explicabo consequuntur harum magni veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et, nam reiciendis madolor sit amet consectetur adipisicing elit. Iste et, nam reiciendis ma</p>
             <div>
-                <br/>
-                <p>Here's the list of services eme eme</p>
+                
                 <h3>
                     <ul className="flex">
                         <li>
